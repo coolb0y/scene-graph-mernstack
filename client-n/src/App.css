@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.App {
+    background-color: #729dcf;
+    text-align: center;
+}
+
+.Head {
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #28282a;
+    padding: 1.66vh;
+    padding-left: 5vh;
+    padding-right: 0px;
+    display: flex;
+}
+
+.Logo {
+    height: 10vh;
+}
+
+.Head-logo {
+    height: 10vh;
+}
+
+.Title {
+    height: 10vh;
+    padding: 1.66vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 3vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.4ch;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.App-logo,
+.Demo-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .App-logo,
+    .Head-logo {
+        animation: App-logo-spin infinite 10s linear;
+    }
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Demo-head,
+.Input-Enter, .output{
+    margin: 4vw;
+    margin-top: 6vw;
+    padding: 3vw;
+    width: fit-content;
+    height: max-content;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    color: #200808;
+    border-radius: 10px;
+    box-shadow: 1.7px 1.4px 5px rgba(0, 0, 0, 0.02),
+        3.8px 3px 8.8px rgba(0, 0, 0, 0.037),
+        6.3px 5.1px 12px rgba(0, 0, 0, 0.053),
+        9.6px 7.6px 14.8px rgba(0, 0, 0, 0.067),
+        13.8px 11px 17.9px rgba(0, 0, 0, 0.078),
+        19.5px 15.6px 21.5px rgba(0, 0, 0, 0.088),
+        27.6px 22.1px 26.2px rgba(0, 0, 0, 0.096),
+        40.2px 32.1px 33.3px rgba(0, 0, 0, 0.103),
+        61.9px 49.5px 45.1px rgba(0, 0, 0, 0.115),
+        110px 88px 80px rgba(0, 0, 0, 0.15);
+}
+
+.Demo-head {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Input-Enter {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2vw;
+    width: max-content;
+}
+
+.output{
+    margin-top: 2vw;
+    width: 90%;
+    justify-content: center;
+}
+
+.output img{
+    width: 98%;
+    border-radius: 8px;
+    box-shadow: 17px 17px 34px #949494,
+        -17px -17px 34px #ffffff;
+}
+
+.Input-Enter {
+    margin-right: 10vw;
+    width: 30vw;
+}
+
+.Demo-head img {
+    width: 50%;
+    height: 50vh;
+    border-radius: 15px;
+    margin-right: 40px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 17px 17px 34px #949494,
+        -17px -17px 34px #ffffff;
+}
+
+.Tag,
+.Tag1 {
+    z-index: 1000;
+    font-weight: 600;
+}
+
+.Tag1 {
+    font-size: large;
+    font-weight: 400;
+    width: 80%;
+}
+
+.Tag1 span {
+    color: #2528e2;
+}
+
+.Input-Image {
+    width: max-content;
+    height: max-content;
+    margin-top: 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #200808; */
+    justify-content: center;
+}
+
+.label {
+    margin-top: 5vh;
+    padding: 15px;
+    width: 50%;
+    height: 15vh;
+    border-radius: 6px;
+    box-shadow: inset 7px 7px 14px #b0b0b0,
+        inset -7px -7px 14px #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+}
+
+#file-upload-button{
+    background: #000000;
+    
+}
+
+.upload {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    padding: 15px;
+    width: 50%;
+    border-radius: 6px;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 20px 20px 42px #a1a1a1,
+        -20px -20px 42px #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.upload:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #000000;
+    transition: 0.5s;
+}
+
+.Caption {
+    margin-top: 3vh;
+    width: max-content;
+    background-color: #c3ccd6;
+    padding: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    letter-spacing: 0.2ch;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 17px 17px 34px #949494,
+        -17px -17px 34px #ffffff;
+}
+
+.Caption li {
+    text-align: left;
+}
+
+/* .output{
+    margin-top: 3vh;
+    width: 25vh;
+    height: 25vh;
+    background-color: ;
+} */
+
+.App-link {
+    color: #61dafb;
+}
+
+table{
+    width: 50%;
+}
+
+tr, th, td{
+    text-align: center;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+tr:nth-child(even){
+    background-color: #3b6997;
+}
+
+tr td:nth-child(even){
+    text-transform: lowercase;
+}
+
+tr:nth-child(even) td:nth-child(even){
+    background-color: #54546d;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
